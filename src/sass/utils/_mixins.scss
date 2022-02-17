@@ -1,0 +1,37 @@
+@mixin font($f-w: 500, $f-s: 14px, $l-h: 1.76, $l-s: 0.04em) {
+  font-weight: $f-w;
+  font-size: $f-s;
+  line-height: $l-h;
+  letter-spacing: $l-s;
+}
+
+@mixin centrFlex($d-f: flex, $a-i: center, $j-c: center) {
+  display: $d-f;
+  align-items: $a-i;
+  justify-content: $j-c;
+}
+
+@mixin centrAbsolut() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin tel {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
