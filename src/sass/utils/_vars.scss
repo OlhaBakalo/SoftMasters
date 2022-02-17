@@ -1,0 +1,24 @@
+:root {
+  /* ---------------Accent color--------------- */
+  --accent-color: #d41443;
+  --accent-text-color: #ffa5ba;
+
+  /* -------------Background color------------- */
+  --basic-bg-color: #fff5f6;
+  --hero-bg-color: #ffb8ca;
+  --second-bg-color: #ffffff;
+  --burger-bg-color: #e17992;
+
+  /* -----------------Text color--------------- */
+  --title-text-color: #000000;
+  --primary-text-color: #907e82;
+  --second-text-color: #ffffff;
+  --accent-text-color: #ffa5ba;
+
+  /* ----------------Stroke color-------------- */
+  --border-color: #e1e1e1;
+
+  /* ----------------Animstion----------------- */
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
