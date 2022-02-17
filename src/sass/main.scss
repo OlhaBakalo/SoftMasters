@@ -8,6 +8,7 @@
 
 @import './utils/vars';
 @import './utils/mixins';
+@import './utils/placeholders';
 @import './utils/hidden';
 
 @import './base/common';
@@ -16,7 +17,6 @@
 @import './components/container';
 
 @import './layout/hero-header';
-@import './layout/burger-menu';
 @import './layout/products';
 @import './layout/about';
 @import './layout/advantages';

@@ -5,12 +5,6 @@
   letter-spacing: $l-s;
 }
 
-@mixin centrFlex($d-f: flex, $a-i: center, $j-c: center) {
-  display: $d-f;
-  align-items: $a-i;
-  justify-content: $j-c;
-}
-
 @mixin centrAbsolut() {
   position: absolute;
   top: 50%;
