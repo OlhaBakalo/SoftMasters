@@ -1,25 +1,45 @@
 <!--------------------HERO SECTION----------------->
-<section class="hero hero-content">
+<section class="hero-content">
     <div class="container hero__container">
-        <div class="hero__ellipse"></div>
-        <h1 class="hero__main-title">ice cream made with <span class="hero__secondary-title">passion</span></h1>
-        <button class="hero__btn" type="button"><a href="#Products">Products</a></button>
-        <button class="hero__btn" type="button"><a href="#How it’s made?">How it’s made?</a></button>
-        <picture>
-            <source srcset="./images/hero/hero-milk-desk-1x.jpg 1x, ./images/hero/hero-milk-desk-2x.jpg 2x"
+        <h1 class="hero__main-title">ice cream <span class="hero__medium-title">made with</span> <span
+                class="hero__secondary-title">passion</span></h1>
+        <ul class="list button-list">
+            <li class="button-list__item"><button class="hero__btn" type="button"><a class="link hero__btn-text"
+                        href="#Products">Products</a></button></li>
+            <li class="button-list__item"><button class="hero__btn" type="button"><a class="link hero__btn-text"
+                        href="#How it’s made?">How it’s
+                        made?</a></button></li>
+        </ul>
+        <picture class="hero__img-milk">
+            <source srcset="./images/hero/hero-milk-desk-1x.png 1x, ./images/hero/hero-milk-desk-2x.png 2x"
                 media="(min-width: 1280px)" />
-            <source srcset="./images/hero/hero-milk-tab-1x.jpg 1x, ./images/hero/hero-milk-tab-2x.jpg 2x" media="(min-width: 768px)" />
-            <img class="hero__img" src="./images/hero/hero-milk-desk-1x.jpg" alt="milk" />
-        </picture>
-        <p class="hero__after-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        <picture>
-            <source srcset="./images/hero/hero-icecream-desk-1x.jpg 1x, ./images/hero/hero-icecream-desk-2x.jpg 2x"
-                media="(min-width: 1280px)" />
-            <source srcset="./images/hero/hero-icecream-tab-1x.jpg 1x, ./images/hero/hero-icecream-tab-2x.jpg 2x"
+            <source srcset="./images/hero/hero-milk-tab-1x.png 1x, ./images/hero/hero-milk-tab-2x.png 2x"
                 media="(min-width: 768px)" />
-            <source srcset="./images/hero/hero-icecream-mob-1x.jpg 1x, ./images/hero/hero-icecream-mob-2x.jpg 2x"
-                media="(min-width: 320px)" />
-            <img class="hero__img" src="./images/hero/hero-icecream-desk-1x.jpg" alt="ice-cream" />
+            <img class="hero__img" src="./images/hero/hero-milk-desk-1x.png" alt="milk" />
         </picture>
-       
+        <p class="hero__after-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et</p>
+        <button class="hero__btn-arrow" type="button">
+            <picture class="hero__btn-img">
+                <source
+                    srcset="./images/hero/hero-arrow-right-desk-1x.jpg 1x, ./images/hero/hero-arrow-right-desk-2x.jpg 2x"
+                    media="(min-width: 1280px)" />
+                <source
+                    srcset="./images/hero/hero-arrow-right-tab-1x.jpg 1x, ./images/hero/hero-arrow-right-tab-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                <img class="hero__img" src="./images/hero/hero-arrow-right-desk-1x.jpg" alt="arrow-right" />
+            </picture>
+        </button>
+        <ul class="list hero-list">
+            <li class="hero-list__item">16<span class="hero-list__text"> cafes</span></li>
+            <li class="hero-list__item">23<span class="hero-list__text"> food trucks</span></li>
+        </ul>
+        <picture class="hero__img-tasty">
+            <source srcset="./images/hero/hero-tasty-desk-1x.png 1x, ./images/hero/hero-tasty-desk-2x.png 2x"
+                media="(min-width: 1280px)" />
+            <source srcset="./images/hero/hero-tasty-tab-1x.png 1x, ./images/hero/hero-tasty-tab-2x.png 2x"
+                media="(min-width: 768px)" />
+            <img class="hero__img" src="./images/hero/hero-tasty-desk-1x.png" alt="tasty" />
+        </picture>
+    </div>    
 </section>
