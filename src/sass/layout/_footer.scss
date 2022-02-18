@@ -1,0 +1,38 @@
+.footer-container {
+  background-color: var(--basic-bg-color);
+}
+
+.footer-header {
+  width: 474px;
+  margin-bottom: 97px;
+}
+
+.subtitle {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34 / 30;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-header__subtitle {
+  color: var(--accent-text-color);
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66 / 58;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer-header__title {
+  color: var(--accent-color);
+  text-align: left;
+}
