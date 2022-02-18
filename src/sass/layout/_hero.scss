@@ -1,53 +1,63 @@
 .hero__container {
+  position: relative;
   background-color: var(--hero-bg-color);
-  // flex-grow: 1;
-  // padding: 272px 0 206px 96px;
   padding-top: 27px;
   padding-bottom: 160px;
-  background-image: url(../images/hero/hero-icecream-mob-1x.png),
-    url(../images/hero/hero-ellipce-mob-1x.png);
-  background-repeat: no-repeat;
-  background-position: 117px 36px, 36px 27px;
-  background-size: contain;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/hero/hero-icecream-mob-2x.png),
-      url(../images/hero/hero-ellipce-mob-2x.png);
-  }
-  @media screen and (min-width: 480px) {
-    background-image: url(../images/hero/hero-icecream-mob-1x.png),
-      url(../images/hero/hero-ellipce-mob-1x.png);
-    background-repeat: no-repeat;
-    background-position: 117px 36px, right;
-    background-size: contain;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/hero/hero-icecream-mob-2x.png),
-        url(../images/hero/hero-ellipce-mob-2x.png);
-    }
-  }
+  overflow: hidden;
   @include tab {
-    background-image: url(../images/hero/hero-icecream-tab-1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/hero/hero-icecream-tab-1x.png);
-    }
+    flex-grow: 1;
+    z-index: 1;
+    padding-top: 31px;
+    padding-bottom: 122px;
+    overflow: visible;
   }
-  @include desk {
-    // max-width: 1600px;
-    // padding-top: 200px;
-    // padding-bottom: 200px;
-    background-image: url(../images/hero/hero-icecream-desk-1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/hero/hero-icecream-desk-1x.png);
-    }
+}
+.hero__ellipse {
+  position: absolute;
+  // top: 83px;
+  top: 27px;
+  right: -62px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  // clip-path: circle(50% at 50% 50%);
+  background-color: var(--accent-text-color);
+  z-index: 1;
+  @include tab {
+    top: 31px;
+    right: 137px;
+    width: 324px;
+    height: 322px;
+  }
+}
+.hero__img-icecrem {
+  position: absolute;
+  width: 171px;
+  height: 410px;
+  right: 32px;
+  bottom: 0;
+  z-index: 2;
+  @include tab {
+    width: 143px;
+    height: 336px;
+    right: 247px;
   }
 }
 .hero__main-title {
   display: block;
-  flex-wrap: wrap;
+  position: relative;
   font-family: 'Titan One', sans-serif;
   @include font(400, 26px, 1.15);
   text-transform: uppercase;
   color: var(--second-bg-color);
   padding-top: 137px;
+  z-index: 3;
+  @include tab {
+    font-size: 22px;
+    line-height: 1.14;
+    padding-top: 15px;
+    z-index: 0;
+  }
 }
 .hero__medium-title {
   @extend .hero__main-title;
@@ -56,12 +66,24 @@
 .hero__secondary-title {
   @include font(400, 48px, 0.96);
   color: var(--accent-color);
+  @include tab {
+    font-size: 34px;
+    line-height: 0.91;
+  }
 }
 .button-list {
   display: flex;
+  position: relative;
+  z-index: 3;
+  @include tab {
+    z-index: 0;
+  }
 }
 .button-list__item:not(:last-child) {
   margin-right: 8px;
+  @include tab {
+    margin-right: 7.6px;
+  }
 }
 .hero__btn {
   margin-top: 19px;
@@ -81,6 +103,9 @@
     background-color: var(--accent-color);
     color: var(--second-bg-color);
   }
+  @include tab {
+    margin-top: 20px;
+  }
 }
 .hero__btn-text {
   color: var(--accent-color);
@@ -90,22 +115,45 @@
     color: var(--second-bg-color);
   }
 }
+.milk-list {
+  display: flex;
+  position: relative;
+  // justify-content: center;
+  align-items: center;
+  margin-top: 19px;
+  // z-index: 3;
+}
+// .milk-list__item {
+//   display: flex;
+// }
 .hero__img-milk {
   display: none;
   @include tab {
-    display: flex;
+    display: block;
+    position: absolute;
+    width: 124px;
+    height: 126px;
+    z-index: 1;
   }
 }
 .hero__after-title {
   display: none;
   @include tab {
-    display: flex;
+    display: block;
+    position: relative;
+    width: 114px;
+    @include font(400, 8px, 1.5, 0);
+    color: var(--second-bg-color);
+    margin-top: 66px;
+    z-index: 1;
   }
 }
 .hero__btn-arrow {
   display: none;
   @include tab {
-    display: flex;
+    display: block;
+    position: relative;
+    z-index: 1;
   }
 }
 .hero-list {
@@ -118,5 +166,12 @@
   display: none;
   @include tab {
     display: flex;
+    position: absolute;
+    margin-top: 72px;
+    width: 168px;
+    height: 133px;
+    right: 62px;
+    bottom: 0;
+    z-index: 2;
   }
 }

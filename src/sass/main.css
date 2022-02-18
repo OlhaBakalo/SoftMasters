@@ -111,11 +111,26 @@ img {
   padding-bottom: 160px;
   background-image: url(../images/hero/hero-icecream-mob-1x.png), url(../images/hero/hero-ellipce-mob-1x.png);
   background-repeat: no-repeat;
-  backrgound-position: left 117px top 36px, left 36px top 27px;
-  background-size: 171px 410px, 346px 344px;
+  background-position: 117px 36px, 36px 27px;
+  background-size: contain;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: url(../images/hero/hero-icecream-mob-2x.png), url(../images/hero/hero-ellipce-mob-2x.png);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero__container {
+    background-image: url(../images/hero/hero-icecream-mob-1x.png), url(../images/hero/hero-ellipce-mob-1x.png);
+    background-repeat: no-repeat;
+    background-position: 117px 36px, right;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero__container {
     background-image: url(../images/hero/hero-icecream-mob-2x.png), url(../images/hero/hero-ellipce-mob-2x.png);
   }
