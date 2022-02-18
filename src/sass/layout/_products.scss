@@ -1,3 +1,41 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 94px;
+}
+li {
+  list-style-type: none;
+}
+.name {
+  margin-bottom: 31px;
+  text-align: center;
+}
+.label-title {
+  font-family: Titan One;
+
+  color: var(--accent-text-color);
+  font-size: 18px;
+  line-height: calc(21 / 18);
+}
+
 .title {
-  color: blue;
+  font-family: Titan One;
+  margin-top: 15px;
+  color: var(--accent-color);
+  font-weight: normal;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+}
+.products__item {
+  width: 280px;
+  height: 598px;
+}
+.products__card {
+  position: relative;
+  width: 280px;
+  height: 485px;
+  background-color: var(--hero-bg-color);
+  border-radius: 24px;
+}
+.products__card::before {
+  background-image: url(/src/images/products/ice-cream.png);
 }
