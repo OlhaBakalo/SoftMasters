@@ -165,8 +165,4 @@ li {
   background-color: var(--hero-bg-color);
   border-radius: 24px;
 }
-
-.products__card::before {
-  background-image: url(/src/images/products/ice-cream.png);
-}
 /*# sourceMappingURL=main.css.map */
