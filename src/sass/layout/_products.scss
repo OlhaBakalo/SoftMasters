@@ -36,3 +36,10 @@ li {
   background-color: var(--hero-bg-color);
   border-radius: 24px;
 }
+.products__card::before {
+  content: '';
+  background-image: url(/src/images/demo.jpg);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
