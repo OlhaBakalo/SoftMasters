@@ -101,6 +101,15 @@
   border-style: none;
   padding: 0;
   margin: 0 auto;
+  &.dark-button:hover,
+  &.dark-button:active {
+    background-color: var(--button-hover-color-dark);
+  }
+  &.light-button:hover,
+  &.light-button:active {
+    background-color: var(--button-hover-color-light);
+  }
+  transition: var(--transition-duration), var(--transition-timing-function);
 }
 
 .contacts__button-icon {
@@ -118,8 +127,8 @@
 }
 
 .contacts__button-icon {
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   margin-left: 8px;
   // margin-top: 2px;
 }
