@@ -1,6 +1,8 @@
+.hero-content {
+  background-color: var(--hero-bg-color);
+}
 .hero__container {
   position: relative;
-  background-color: var(--hero-bg-color);
   padding-top: 27px;
   padding-bottom: 160px;
   overflow: hidden;
