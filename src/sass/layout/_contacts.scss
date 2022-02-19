@@ -1,4 +1,21 @@
+.contacts {
+  width: 100%;
+  background: rgb(255, 245, 245);
+  background: linear-gradient(0deg, rgba(255, 245, 245, 1) 95%, rgba(255, 255, 255, 1) 90%);
+  padding-bottom: 113px;
+}
+
+.contacts__container {
+  min-width: 320px;
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+}
+
+.contacts_item-list {
+  margin-bottom: 54px;
+}
 .contacts__item {
+  width: 100%;
   @include font($f-s: 12px, $l-h: 1.83);
   background: var(--second-bg-color);
   height: 427px;
@@ -46,14 +63,7 @@
   @include font($f-s: 12px, $l-h: 1.5);
 }
 
-.contacts__header-list::after {
-  content: '';
-  display: block;
-  border-bottom: 1px solid #e1e1e1;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
+.contacts__header-list::after,
 .contacts__body-list::after {
   content: '';
   display: block;
@@ -69,13 +79,38 @@
 
 .contacts__buttons-item {
   list-style: none;
+  width: 100%;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__btn {
+  display: block;
+  @include font($f-w: 700, $f-s: 16px, $l-h: 1.31);
+  width: 161px;
   border-radius: 22px;
   height: 44px;
+  border-style: none;
+  padding: 0 17px;
+  margin: 0 auto;
 }
 
 .dark-button {
   background-color: var(--accent-color);
+  color: var(--second-text-color);
+}
+
+.light-button {
+  background-color: var(--second-text-color);
+  color: var(--accent-color);
+}
+
+.contacts__button-icon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  // margin-left: 8px;
+  // margin-top: 2px;
 }
