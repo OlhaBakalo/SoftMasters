@@ -2,6 +2,9 @@
   @include tab {
     height: 399px;
   }
+  @include desk {
+    height: 665px;
+  }
 }
 .hero__container {
   position: relative;
@@ -15,6 +18,12 @@
     padding-top: 31px;
     padding-bottom: 0;
     overflow: visible;
+  }
+  @include desk {
+    padding-top: 48px;
+    padding-bottom: 0;
+    padding-left: 77px;
+    padding-right: 97px;
   }
 }
 .hero__ellipse {
@@ -32,18 +41,26 @@
     width: 324px;
     height: 322px;
   }
+  @include desk {
+    top: 48px;
+    right: 267px;
+    width: 538px;
+    height: 538px;
+  }
 }
 .hero__img-icecream {
   position: absolute;
   width: 171px;
-  height: 410px;
   right: 32px;
   bottom: 0;
   z-index: 2;
   @include tab {
     width: 143px;
-    height: 336px;
     right: 247px;
+  }
+  @include desk {
+    width: 236px;
+    right: 450px;
   }
 }
 .hero__main-title {
@@ -61,10 +78,19 @@
     padding-top: 71px;
     z-index: 0;
   }
+  @include desk {
+    font-size: 38px;
+    line-height: 1.16;
+    padding-top: 119px;
+    margin-left: 38px;
+  }
 }
 .hero__medium-title {
   @extend .hero__main-title;
   padding-top: 0;
+  @include desk {
+    margin-left: 0;
+  }
 }
 .hero__secondary-title {
   @include font(400, 48px, 0.96);
@@ -72,6 +98,10 @@
   @include tab {
     font-size: 34px;
     line-height: 0.91;
+  }
+  @include desk {
+    font-size: 58px;
+    line-height: 0.9;
   }
 }
 .button-list {
@@ -81,16 +111,21 @@
   @include tab {
     z-index: 0;
   }
+  @include desk {
+    margin-left: 38px;
+  }
 }
 .button-list__item:not(:last-child) {
   margin-right: 8px;
   @include tab {
     margin-right: 7.6px;
   }
+  @include desk {
+    margin-right: 15px;
+  }
 }
 .hero__btn {
   margin-top: 19px;
-  background-color: var(--second-text-color);
   font-family: inherit;
   @include font(400, 8px, 1.25);
   align-items: center;
@@ -99,24 +134,32 @@
   border-radius: 20px;
   border: none;
   padding: 7px 15.4px 7px 13px;
-  transition: background-color var(--transition-duration) var(--transition-timing-function),
-    color var(--transition-duration) var(--transition-timing-function);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    color: var(--second-bg-color);
-  }
   @include tab {
     margin-top: 20px;
     margin-bottom: 19px;
   }
+  @include desk {
+    margin-top: 25px;
+    margin-bottom: 56px;
+  }
 }
-.hero__btn-text {
+.hero__btn-left {
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
+}
+.hero__btn-right {
+  background-color: var(--second-text-color);
   color: var(--accent-color);
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
-  &:hover,
-  &:focus {
-    color: var(--second-bg-color);
+}
+.hero__left-content {
+  display: none;
+  @include tab {
+    display: block;
+    position: relative;
+    padding-bottom: 28px;
+  }
+  @include desk {
+    padding-bottom: 49px;
   }
 }
 .hero__img-milk {
@@ -129,39 +172,51 @@
     z-index: 1;
     bottom: 28px;
   }
-}
-.hero__left-content {
-  display: none;
-  @include tab {
-    display: block;
-    position: relative;
-    padding-bottom: 34px;
+  @include desk {
+    width: 188px;
+    height: 191px;
+    bottom: 49px;
+    z-index: 0;
   }
 }
 .hero__after-title {
   position: relative;
   width: 114px;
-  @include font(400, 8px, 1.5, 0);
+  @include font(400, 8px, 1.5, null);
   color: var(--second-bg-color);
   margin-top: 47px;
   margin-left: 120px;
   margin-bottom: 7px;
   z-index: 2;
+  @include desk {
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.43;
+    margin-left: 218px;
+    z-index: 0;
+    margin-bottom: 20px;
+  }
 }
 .hero__btn-arrow {
   position: relative;
   z-index: 1;
-  margin-left: 120px;
-  background-color: var(--second-bg-color);
-  // min-height: 18px;
-  // min-width: 18px;
+  margin-left: 115px;
+  background-color: transparent;
   border: none;
-  // border-radius: 50%;
+  margin-bottom: 6px;
+  @include desk {
+    z-index: 0;
+    margin-left: 213px;
+    margin-bottom: 11px;
+  }
 }
-
 .hero__btn-img {
   max-height: 18px;
   max-width: 18px;
+  @include desk {
+    max-height: 26px;
+    max-width: 26px;
+  }
 }
 .right-content {
   display: none;
@@ -173,6 +228,9 @@
     right: 34px;
     bottom: 0;
   }
+  @include desk {
+    right: 97px;
+  }
 }
 .right-content__ellipse {
   position: absolute;
@@ -182,12 +240,21 @@
   background-color: var(--second-bg-color);
   top: 0;
   right: 0;
+  @include desk {
+    width: 30px;
+    height: 30px;
+  }
 }
 .right-content__cafes {
   position: relative;
   width: 43px;
   height: 44px;
   margin-bottom: 13px;
+  @include desk {
+    width: 72px;
+    height: 77px;
+    margin-bottom: 15px;
+  }
 }
 .right-content__number--cafes {
   position: absolute;
@@ -197,19 +264,34 @@
   @include font(400, 28px, 1.14);
   text-transform: uppercase;
   color: var(--accent-color);
+  @include desk {
+    top: 4px;
+    font-size: 46px;
+    line-height: 1.15;
+  }
 }
 .right-content__text--cafes {
   position: absolute;
-  @include font(400, 8px, 1.25, 0);
+  @include font(400, 8px, 1.25, null);
   color: var(--second-text-color);
   bottom: 2px;
   left: 12px;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29;
+    left: 19px;
+  }
 }
 .right-content__trucks {
   position: relative;
   width: 51px;
   height: 43px;
   margin-bottom: 72px;
+  @include desk {
+    width: 92px;
+    height: 76px;
+    margin-bottom: 109px;
+  }
 }
 .right-content__number--trucks {
   position: absolute;
@@ -219,35 +301,31 @@
   @include font(400, 28px, 1.14);
   text-transform: uppercase;
   color: var(--accent-color);
+  @include desk {
+    top: 3px;
+    left: 16px;
+    font-size: 46px;
+    line-height: 1.15;
+  }
 }
 .right-content__text--trucks {
   position: absolute;
   bottom: 0;
   left: 0;
-  @include font(400, 8px, 1.25, 0);
+  @include font(400, 8px, 1.25, null);
   color: var(--second-text-color);
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 .right-content__img--tasty {
   width: 168px;
   height: 133px;
   z-index: 2;
+  @include desk {
+    width: 293px;
+    height: 232px;
+    margin-right: 12px;
+  }
 }
-
-// .hero__right-content {
-//   display: none;
-//   @include tab {
-//   }
-// }
-// .hero__img-tasty {
-//   display: none;
-//   @include tab {
-//     // display: flex;
-//     // position: absolute;
-//     // margin-top: 72px;
-//     // width: 168px;
-//     // height: 133px;
-//     // right: 34px;
-//     // bottom: 0;
-//     // z-index: 2;
-//   }
-// }
