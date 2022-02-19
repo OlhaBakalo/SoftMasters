@@ -254,7 +254,8 @@ li {
     transform: translateY(-525px);
   }
 }
-.products__info--ishidden {
+.products__info--ishidden,
+.cream__info--ishidden {
   opacity: 0;
   visibility: hidden;
   position: absolute;
