@@ -67,3 +67,11 @@
     background-color: var(--button-accent-bg-two);
   }
 }
+
+@mixin retina($dpr) {
+  @media (min-device-pixel-ratio: $dpr),
+    (min-resolution: ($dpr * 96dpi)),
+    (min-resolution: ($dpr + 0dppx)) {
+    @content;
+  }
+}
