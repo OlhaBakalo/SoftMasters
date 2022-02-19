@@ -271,7 +271,7 @@ li {
 }
 
 .products__info--btn {
-  background-image: url('../images/products/arrow-right.png');
+  background-image: url('../images/products/arrow-left.png');
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -287,4 +287,5 @@ li {
   text-align: center;
   letter-spacing: 0.04em;
   margin-bottom: 60px;
+  color: red;
 }
