@@ -2,18 +2,20 @@
   background-color: var(--basic-bg-color);
 }
 .footer-top {
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
   }
 }
 .footer-header {
   width: 234px;
   margin-bottom: 43px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     width: 340px;
+    margin-bottom: 91px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     width: 478px;
+    margin-bottom: 97px;
   }
 }
 .footer-header__subtitle {
@@ -21,21 +23,24 @@
   text-align: left;
   margin-bottom: 17px;
 
-  font-family: 'Titan One';
-  font-weight: 400;
+  font-family: 'Titan One', cursive;
   font-size: 18px;
   line-height: 1.16;
-  text-align: center;
+  // text-align: center;
   text-transform: uppercase;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     font-size: 26px;
     line-height: 1.15;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 16px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desk {
     font-size: 30px;
     line-height: 1.13;
+    margin-bottom: 15px;
   }
 }
 
@@ -43,23 +48,22 @@
   color: var(--accent-color);
   text-align: left;
 
-  font-family: 'Titan One';
-  font-weight: 400;
+  font-family: 'Titan One', cursive;
   font-size: 34px;
   line-height: 1.14;
-  text-align: center;
+  // text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     font-size: 48px;
     line-height: 1.14;
+    letter-spacing: 0.06em;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include desk {
     font-size: 58px;
     line-height: 1.13;
-    letter-spacing: 0.06em;
   }
 }
 
@@ -101,20 +105,19 @@
 }
 .footer-contact {
   margin-bottom: 43px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     margin-bottom: 0;
     margin-left: auto;
   }
 }
 .footer-contact__text {
-  @include font(12px, 1.86, 0, 700);
+  @include font(700, 12px, 1.86, null);
   text-align: right;
-  color: var(--text-dark);
-  @media screen and (min-width: 768px) {
+  color: var(--title-text-color);
+  @include tab {
     font-size: 14px;
-    letter-spacing: 0.02em;
   }
-  @media screen and (min-width: 1280px) {
+  @include desk {
     font-size: 16px;
   }
 }
@@ -128,14 +131,25 @@
   border-top: 1px solid #e1e1e1;
   padding-top: 22px;
   padding-bottom: 25px;
+  @include tab {
+    letter-spacing: 0.02em;
+
+    padding-top: 29px;
+    padding-bottom: 18px;
+  }
+  @include desk {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 .footer-copyright__text {
   width: 150px;
   margin: 0 auto;
-  @include font(14px, 1.52, 0, 700);
+  @include font(700, 14px, 1.52, null);
   text-align: center;
   color: var(--primary-text-colo);
-  @media screen and (min-width: 768px) {
-    width: 290px;
+  @include tab {
+    width: 276px;
+    letter-spacing: 0.02em;
   }
 }
