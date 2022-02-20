@@ -20,7 +20,7 @@ li {
   margin-bottom: 31px;
 }
 .name__lable {
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -38,12 +38,12 @@ li {
   }
 }
 .name__title {
-  font-family: Titan One;
+  font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 34px;
   line-height: calc(39 / 34);
-
+  text-transform: uppercase;
   color: var(--accent-color);
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -189,13 +189,14 @@ li {
   }
 }
 .products__title {
-  font-family: Titan One;
+  font-family: 'Titan One', cursive;
   letter-spacing: 0.04em;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: calc(23 / 20);
   color: #fff;
+  text-transform: uppercase;
 
   text-align: center;
   @media screen and (min-width: 768px) {
@@ -208,13 +209,13 @@ li {
   }
 }
 .products__text {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.04em;
   font-size: 14px;
   line-height: 21px;
-  color: #fff;
+  color: var(--second-text-color);
 
   text-align: center;
   width: 200px;
@@ -238,12 +239,12 @@ li {
 .products__info {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
+  padding: 40px;
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
+  background-color: var(--hero-bg-color);
 
   border-radius: 24px;
   text-align: center;
@@ -252,6 +253,7 @@ li {
 
   @media screen and(min-width:1280px) {
     transform: translateY(-525px);
+    padding: 54px;
   }
 }
 .products__info--ishidden,
@@ -279,7 +281,7 @@ li {
 }
 
 .products__info--text {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -287,5 +289,5 @@ li {
   text-align: center;
   letter-spacing: 0.04em;
   margin-bottom: 60px;
-  color: red;
+  color: var(--second-text-color);
 }
