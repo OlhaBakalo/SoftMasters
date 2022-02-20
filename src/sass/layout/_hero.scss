@@ -58,7 +58,8 @@
   }
 }
 .hero__main-title {
-  display: block;
+  width: 218px;
+  padding-bottom: 19px;
   position: relative;
   font-family: 'Titan One', sans-serif;
   @include font(400, 26px, 1.15);
@@ -67,23 +68,20 @@
   padding-top: 137px;
   z-index: 3;
   @include tab {
+    width: 162px;
+    padding-bottom: 20px;
     font-size: 22px;
     line-height: 1.14;
     padding-top: 71px;
     z-index: 0;
   }
   @include desk {
+    width: 277px;
+    padding-bottom: 25px;
     font-size: 38px;
     line-height: 1.16;
     padding-top: 119px;
     margin-left: 38px;
-  }
-}
-.hero__medium-title {
-  @extend .hero__main-title;
-  padding-top: 0;
-  @include desk {
-    margin-left: 0;
   }
 }
 .hero__secondary-title {
@@ -98,18 +96,23 @@
     line-height: 0.9;
   }
 }
-.button-list {
+.hero__link-content {
+  display: flex;
+}
+.hero__link-list {
   display: flex;
   position: relative;
   z-index: 3;
   @include tab {
     z-index: 0;
+    padding-bottom: 19px;
   }
   @include desk {
     margin-left: 38px;
+    padding-bottom: 56px;
   }
 }
-.button-list__item:not(:last-child) {
+.hero__link-item:not(:last-child) {
   margin-right: 8px;
   @include tab {
     margin-right: 7.6px;
@@ -118,30 +121,24 @@
     margin-right: 15px;
   }
 }
-.hero__btn {
-  margin-top: 19px;
+.hero__link {
+  border-radius: 20px;
+  border: none;
   font-family: inherit;
   @include font(400, 8px, 1.25);
   align-items: center;
   text-align: center;
-  min-height: 24px;
-  border-radius: 20px;
-  border: none;
   padding: 7px 15.4px 7px 13px;
-  @include tab {
-    margin-top: 20px;
-    margin-bottom: 19px;
-  }
   @include desk {
-    margin-top: 25px;
-    margin-bottom: 56px;
+    font-size: 14px;
+    line-height: 1.29;
   }
 }
-.hero__btn-left {
+.hero__link-left {
   background-color: var(--accent-color);
   color: var(--second-text-color);
 }
-.hero__btn-right {
+.hero__link-right {
   background-color: var(--second-text-color);
   color: var(--accent-color);
 }
@@ -157,15 +154,11 @@
   }
 }
 .hero__img-milk {
-  display: none;
-  @include tab {
-    display: block;
-    position: absolute;
-    width: 124px;
-    height: 126px;
-    z-index: 1;
-    bottom: 28px;
-  }
+  position: absolute;
+  width: 124px;
+  height: 126px;
+  z-index: 1;
+  bottom: 28px;
   @include desk {
     width: 188px;
     height: 191px;
@@ -198,10 +191,16 @@
   background-color: transparent;
   border: none;
   margin-bottom: 6px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
   @include desk {
     z-index: 0;
     margin-left: 213px;
     margin-bottom: 11px;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
   }
 }
 .hero__btn-img {
