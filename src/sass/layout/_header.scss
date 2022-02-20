@@ -79,7 +79,6 @@
   width: 20px;
   height: 14px;
   margin-top: 0;
-  // margin-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,10 +110,7 @@
     stroke: var(--second-bg-color);
   }
 }
-// .menu-toggle-close__icon {
-//   // display: inline;
-//   stroke: var(--second-bg-color);
-// }
+
 .menu-conteiner {
   position: fixed;
   top: 0;
@@ -158,9 +154,7 @@
 
 .mob-list__link {
   @include font(null, null, 1.28);
-
   color: var(--second-text-color);
-
   transition: color var(--transition-duration) var(--timing-function);
 
   &:hover,
