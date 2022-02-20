@@ -22,7 +22,7 @@ li {
 .name__lable {
   font-family: 'Titan One', cursive;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: calc(21 / 18);
   margin-bottom: 15px;
@@ -40,7 +40,7 @@ li {
 .name__title {
   font-family: 'Titan One', cursive;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 34px;
   line-height: calc(39 / 34);
   text-transform: uppercase;
@@ -198,7 +198,7 @@ li {
   font-family: 'Titan One', cursive;
   letter-spacing: 0.04em;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: calc(23 / 20);
   color: #fff;
@@ -220,7 +220,7 @@ li {
   font-weight: bold;
   letter-spacing: 0.04em;
   font-size: 14px;
-  line-height: 21px;
+  line-height: calc(21 / 14);
   color: var(--second-text-color);
 
   text-align: center;
@@ -289,9 +289,9 @@ li {
 .products__info--text {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 28px;
+  line-height: calc(28 / 16);
   text-align: center;
   letter-spacing: 0.04em;
   margin-bottom: 40px;
