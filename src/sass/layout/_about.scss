@@ -1,0 +1,105 @@
+.about {
+  background-color: var(--basic-bg-color);
+  padding-top: 125px;
+  padding-bottom: 39px;
+  position: relative;
+}
+
+.about__subtitle {
+  font-family: 'Titan One', cursive;
+  @include font(400, 26px, 1.14, null);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+
+  margin-bottom: 16px;
+  @include tab {
+    line-height: 1.15;
+  }
+}
+
+.about__title {
+  font-family: 'Titan One', cursive;
+  @include font(400, 48px, 1.15, null);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 26px;
+  @include tab {
+    margin-bottom: 50px;
+  }
+}
+
+.about-description {
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -17px;
+  }
+}
+.about-description__box {
+  @include tab {
+    flex-basis: calc(100% / 2 - 17px);
+    margin-left: 17px;
+  }
+}
+.about-description__img-box {
+  @include only_tel {
+    margin-bottom: 46px;
+  }
+}
+.about-description__content-box {
+  @include only_tel {
+    padding: 0 30px;
+  }
+  @include tab {
+    padding-top: 50px;
+  }
+}
+.about-description__main-text {
+  @include font(null, 12px, 1.62, null);
+  color: var(--title-text-color);
+  margin-bottom: 28px;
+  @include tab {
+    @include font(null, 14px, 1.76, null);
+  }
+}
+.about-description__details-text {
+  @include font(null, 12px, 1.62, null);
+  &:last-of-type {
+    margin-bottom: 21px;
+  }
+  & + & {
+    margin-top: 10px;
+  }
+  @include tab {
+    @include font(null, 14px, 1.76, null);
+    &:last-of-type {
+      margin-bottom: 57px;
+    }
+  }
+}
+
+.about__button {
+  @include button__arrow--type-one(37px, 38px, 14px);
+  @include font(700, 14px, 1.29, null);
+  @include only_tel {
+    margin: 0 auto;
+  }
+  @include tab {
+    @include font(700, 16px, 1.31, null);
+  }
+}
+// .about__bckgrnd {
+//   position: absolute;
+//   z-index: -3;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 133px;
+//   background-image: url(../images/about/milk-bg-mob-2x.png);
+//   @include retina(2) {
+//     background-image: url(../images/about/milk-bg-mob-2x.png);
+//   }
+// }
