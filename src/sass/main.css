@@ -105,6 +105,13 @@ img {
   }
 }
 
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+}
+
 .header-container {
   background-color: var(--hero-bg-color);
   display: -webkit-box;
