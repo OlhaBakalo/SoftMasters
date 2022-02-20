@@ -130,10 +130,12 @@ li {
   }
 }
 
-.products__item:nth-child(2n) .products__card {
+.products__item:nth-child(2n) .products__card,
+.products__item:nth-child(2n) .products__info {
   background-color: rgba(240, 209, 165, 1);
 }
-.products__item:nth-child(3n) .products__card {
+.products__item:nth-child(3n) .products__card,
+.products__item:nth-child(3n) .products__info {
   background-color: rgba(194, 226, 151, 1);
 }
 
