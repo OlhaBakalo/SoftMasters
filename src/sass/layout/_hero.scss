@@ -1,10 +1,335 @@
+.hero-content {
+  background-color: var(--hero-bg-color);
+}
+.hero__container {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 160px;
+  overflow: hidden;
+  @include tab {
+    flex-grow: 1;
+    z-index: 1;
+    padding-top: 31px;
+    padding-bottom: 0;
+    overflow: visible;
+  }
+  @include desk {
+    padding-top: 48px;
+    padding-bottom: 0;
+    padding-left: 77px;
+    padding-right: 97px;
+  }
+}
+.hero__ellipse {
+  position: absolute;
+  top: 27px;
+  right: -62px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: var(--accent-text-color);
+  z-index: 1;
+  @include tab {
+    top: 31px;
+    right: 137px;
+    width: 324px;
+    height: 322px;
+  }
+  @include desk {
+    top: 48px;
+    right: 267px;
+    width: 538px;
+    height: 538px;
+  }
+}
+.hero__img-icecream {
+  position: absolute;
+  width: 171px;
+  right: 32px;
+  bottom: 0;
+  z-index: 2;
+  @include tab {
+    width: 143px;
+    right: 247px;
+  }
+  @include desk {
+    width: 236px;
+    right: 450px;
+  }
+}
+.hero-title {
+  width: 218px;
+  padding-bottom: 19px;
+  position: relative;
+  padding-top: 137px;
+  z-index: 3;
+  @include tab {
+    width: 162px;
+    padding-bottom: 20px;
+    padding-top: 71px;
+    z-index: 0;
+  }
+  @include desk {
+    width: 277px;
+    padding-bottom: 36px;
+    padding-top: 119px;
+    margin-left: 38px;
+  }
+}
 .hero__main-title {
   font-family: 'Titan One', sans-serif;
-  @include font(26px, 1.15);
+  @include font(400, 26px, 1.15);
   text-transform: uppercase;
   color: var(--second-bg-color);
+  @include tab {
+    font-size: 22px;
+    line-height: 1.14;
+  }
+  @include desk {
+    font-size: 38px;
+    line-height: 1.16;
+  }
 }
 .hero__secondary-title {
-  @include font(48px, 0.96);
+  @include font(400, 48px, 0.96);
   color: var(--accent-color);
+  @include tab {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+  @include desk {
+    font-size: 58px;
+    line-height: 0.9;
+  }
+}
+.hero-link__content {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  @include tab {
+    z-index: 0;
+    padding-bottom: 26px;
+  }
+  @include desk {
+    margin-left: 38px;
+    padding-bottom: 67px;
+  }
+}
+.hero__link-list {
+  display: flex;
+  // position: relative;
+  // z-index: 3;
+  // @include tab {
+  //   z-index: 0;
+  //   padding-bottom: 19px;
+  // }
+  // @include desk {
+  //   margin-left: 38px;
+  //   padding-bottom: 56px;
+  // }
+}
+.hero__link-item:not(:last-child) {
+  margin-right: 8px;
+  @include tab {
+    margin-right: 7.6px;
+  }
+  @include desk {
+    margin-right: 15px;
+  }
+}
+.hero__link {
+  border-radius: 20px;
+  border: none;
+  font-family: inherit;
+  @include font(400, 8px, 1.25);
+  align-items: center;
+  text-align: center;
+  padding: 7px 15.4px 7px 13px;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29;
+    padding: 11px 23px 11px 22px;
+  }
+}
+.hero__link-left {
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
+}
+.hero__link-right {
+  background-color: var(--second-text-color);
+  color: var(--accent-color);
+}
+.hero__left-content {
+  display: none;
+  @include tab {
+    display: block;
+    position: relative;
+    padding-bottom: 28px;
+  }
+  @include desk {
+    padding-bottom: 49px;
+  }
+}
+.hero__img-milk {
+  position: absolute;
+  width: 124px;
+  height: 126px;
+  z-index: 1;
+  bottom: 28px;
+  @include desk {
+    width: 188px;
+    height: 191px;
+    bottom: 49px;
+    z-index: 0;
+  }
+}
+.hero__after-title {
+  position: relative;
+  width: 114px;
+  @include font(400, 8px, 1.5, null);
+  color: var(--second-bg-color);
+  margin-top: 47px;
+  margin-left: 120px;
+  margin-bottom: 7px;
+  z-index: 2;
+  @include desk {
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.43;
+    margin-left: 218px;
+    z-index: 0;
+    margin-bottom: 20px;
+  }
+}
+.hero__btn-arrow {
+  position: relative;
+  z-index: 1;
+  margin-left: 115px;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 6px;
+  @include desk {
+    z-index: 0;
+    margin-left: 213px;
+    margin-bottom: 11px;
+  }
+}
+.hero__btn-img {
+  max-height: 18px;
+  max-width: 18px;
+  @include desk {
+    max-height: 26px;
+    max-width: 26px;
+  }
+}
+.right-content {
+  display: none;
+  @include tab {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 34px;
+    bottom: 0;
+  }
+  @include desk {
+    right: 97px;
+  }
+}
+.right-content__ellipse {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--second-bg-color);
+  top: 0;
+  right: 0;
+  @include desk {
+    width: 30px;
+    height: 30px;
+  }
+}
+.right-content__cafes {
+  position: relative;
+  width: 43px;
+  height: 44px;
+  margin-bottom: 13px;
+  @include desk {
+    width: 72px;
+    height: 77px;
+    margin-bottom: 15px;
+  }
+}
+.right-content__number--cafes {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  font-family: 'Titan One', sans-serif;
+  @include font(400, 28px, 1.14);
+  text-transform: uppercase;
+  color: var(--accent-color);
+  @include desk {
+    top: 4px;
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+.right-content__text--cafes {
+  position: absolute;
+  @include font(400, 8px, 1.25, null);
+  color: var(--second-text-color);
+  bottom: 2px;
+  left: 12px;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29;
+    left: 19px;
+  }
+}
+.right-content__trucks {
+  position: relative;
+  width: 51px;
+  height: 43px;
+  margin-bottom: 72px;
+  @include desk {
+    width: 92px;
+    height: 76px;
+    margin-bottom: 109px;
+  }
+}
+.right-content__number--trucks {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  font-family: 'Titan One', sans-serif;
+  @include font(400, 28px, 1.14);
+  text-transform: uppercase;
+  color: var(--accent-color);
+  @include desk {
+    top: 3px;
+    left: 16px;
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+.right-content__text--trucks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @include font(400, 8px, 1.25, null);
+  color: var(--second-text-color);
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+.right-content__img--tasty {
+  width: 168px;
+  height: 133px;
+  z-index: 2;
+  @include desk {
+    width: 293px;
+    height: 232px;
+    margin-right: 12px;
+  }
 }
