@@ -3,7 +3,7 @@
 }
 .hero__container {
   position: relative;
-  padding-top: 27px;
+  padding-top: 83px;
   padding-bottom: 160px;
   overflow: hidden;
   @include tab {
@@ -22,7 +22,7 @@
 }
 .hero__ellipse {
   position: absolute;
-  top: 27px;
+  top: 83px;
   right: -62px;
   width: 346px;
   height: 344px;
@@ -61,7 +61,7 @@
   width: 218px;
   padding-bottom: 19px;
   position: relative;
-  padding-top: 137px;
+  padding-top: 110px;
   z-index: 3;
   @include tab {
     width: 162px;
