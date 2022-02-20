@@ -57,31 +57,37 @@
     right: 450px;
   }
 }
-.hero__main-title {
+.hero-title {
   width: 218px;
   padding-bottom: 19px;
   position: relative;
-  font-family: 'Titan One', sans-serif;
-  @include font(400, 26px, 1.15);
-  text-transform: uppercase;
-  color: var(--second-bg-color);
   padding-top: 137px;
   z-index: 3;
   @include tab {
     width: 162px;
     padding-bottom: 20px;
-    font-size: 22px;
-    line-height: 1.14;
     padding-top: 71px;
     z-index: 0;
   }
   @include desk {
     width: 277px;
-    padding-bottom: 25px;
-    font-size: 38px;
-    line-height: 1.16;
+    padding-bottom: 36px;
     padding-top: 119px;
     margin-left: 38px;
+  }
+}
+.hero__main-title {
+  font-family: 'Titan One', sans-serif;
+  @include font(400, 26px, 1.15);
+  text-transform: uppercase;
+  color: var(--second-bg-color);
+  @include tab {
+    font-size: 22px;
+    line-height: 1.14;
+  }
+  @include desk {
+    font-size: 38px;
+    line-height: 1.16;
   }
 }
 .hero__secondary-title {
@@ -96,21 +102,31 @@
     line-height: 0.9;
   }
 }
-.hero__link-content {
-  display: flex;
-}
-.hero__link-list {
+.hero-link__content {
   display: flex;
   position: relative;
   z-index: 3;
   @include tab {
     z-index: 0;
-    padding-bottom: 19px;
+    padding-bottom: 26px;
   }
   @include desk {
     margin-left: 38px;
-    padding-bottom: 56px;
+    padding-bottom: 67px;
   }
+}
+.hero__link-list {
+  display: flex;
+  // position: relative;
+  // z-index: 3;
+  // @include tab {
+  //   z-index: 0;
+  //   padding-bottom: 19px;
+  // }
+  // @include desk {
+  //   margin-left: 38px;
+  //   padding-bottom: 56px;
+  // }
 }
 .hero__link-item:not(:last-child) {
   margin-right: 8px;
@@ -132,6 +148,7 @@
   @include desk {
     font-size: 14px;
     line-height: 1.29;
+    padding: 11px 23px 11px 22px;
   }
 }
 .hero__link-left {
@@ -191,16 +208,10 @@
   background-color: transparent;
   border: none;
   margin-bottom: 6px;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
   @include desk {
     z-index: 0;
     margin-left: 213px;
     margin-bottom: 11px;
-    height: 26px;
-    width: 26px;
-    border-radius: 50%;
   }
 }
 .hero__btn-img {
