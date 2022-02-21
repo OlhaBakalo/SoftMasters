@@ -1,0 +1,81 @@
+.slider__img {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 72px;
+  width: 85px;
+  height: 85px;
+}
+.slider__text {
+  background-color: #fafafa;
+
+  margin-bottom: 72px;
+
+  text-align: center;
+  @include font(500, 12px, 2.56, null);
+  color: var(--title-text-color);
+  width: 180px;
+  min-height: 245px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 28px,
+    #e1e1e1 29px,
+    #e1e1e1 30px
+  );
+}
+
+.slider__title {
+  margin-bottom: 30px;
+
+  text-align: center;
+  @include font(500, 14px, 1.86, null);
+  color: var(--title-text-color);
+}
+
+.customer-reviews__container {
+  padding-top: 80px;
+  padding-bottom: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+.slider {
+  min-width: 0;
+  margin: 0 auto;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button {
+  background: url('../images/customer-reviews/active-page.png') 0 0 / 100% no-repeat;
+  border-radius: 0;
+}

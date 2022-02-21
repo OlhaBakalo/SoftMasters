@@ -1,0 +1,192 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(240, 193, 165, 0.35);
+  opacity: 1;
+  transition: opacity var(--transition-duration) var(--transition-timing-function);
+  z-index: 99;
+}
+.modal {
+  z-index: 99;
+  width: 90vw;
+  min-height: 581px;
+  background-color: var(--basic-bg-color);
+  border-radius: 10px;
+  box-shadow: 4px 4px 3px 6px rgb(0 0 0 / 25%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transition-duration) var(--transition-timing-function),
+    opacity var(--transition-duration) var(--transition-timing-function);
+  padding: 40px;
+  @include tab {
+    width: 450px;
+    min-height: 609px;
+  }
+  @include desk {
+    width: 528px;
+    min-height: 581px;
+  }
+}
+.modal__btn-close {
+  @extend %centrFlex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--second-bg-color);
+  border: 1px solid #d41443;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.modal__btn-close__icon {
+  fill: var(--accent-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+  .modal__btn-close:hover &,
+  .modal__btn-close:focus & {
+    fill: var(--second-bg-color);
+  }
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop.is-hidden {
+  .modal {
+    transform: translate(-50%, -50%) scale(1.5) rotate(360deg);
+  }
+}
+.modal__title {
+  font-family: Titan One, sans-serif;
+  @include font(400, 20px, 1.15);
+  text-align: center;
+  color: var(--burger-bg-color);
+  margin-bottom: 12px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+.form__field:not(:last-child) {
+  margin-bottom: 10px;
+}
+.input__text {
+  display: block;
+  @include font(400, 12px, 1.16);
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+.input__wrap {
+  position: relative;
+}
+.form__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(247, 12, 24, 0.281);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
+  &:focus {
+    border-color: var(--accent-color);
+    & + .input__icon {
+      fill: var(--accent-color);
+    }
+  }
+}
+.input__icon {
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  bottom: 11px;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.form__text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(247, 12, 24, 0.281);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 12px;
+  resize: none;
+  cursor: pointer;
+  outline: none;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    @include font(400, 14px, 1.14);
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.check__text {
+  @include font(400, 12px, 1.17, 0.02em);
+  color: var(--primary-text-color);
+  display: flex;
+  flex-wrap: wrap;
+  &::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--accent-color);
+    border-radius: 2px;
+    margin-right: 7px;
+  }
+  @include tab {
+    align-items: center;
+  }
+  @include desk {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+.policy-check:checked + .check__text::before {
+  border: none;
+  background-image: url(../images/hero/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.check__link {
+  @include font(400, 12px, 1.17, 0.02em);
+  text-decoration-line: underline;
+  color: var(--accent-color);
+  @include desk {
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+.form__btn {
+  @extend %centrFlex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.form__btn-send {
+  padding: 10px 55px 10px 56px;
+  background-color: var(--second-bg-color);
+  font-family: inherit;
+  @include font(700, 16px, 1.31);
+  text-align: center;
+  color: var(--accent-color);
+  min-width: 200px;
+  min-height: 50px;
+  border: 1px solid #d41443;
+  border-radius: 22px;
+}
