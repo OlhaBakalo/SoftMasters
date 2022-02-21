@@ -1,12 +1,12 @@
 .header {
   position: absolute;
   width: 100%;
+  top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 99;
 }
 
 .header-container {
-  background-color: var(--hero-bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,17 +35,20 @@
 }
 
 .header-list__item {
-  color: var(--second-text-color);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
   &:not(:last-child) {
     margin-right: 35px;
   }
 }
 .header-list__link {
   @include font(null, 16px, 1.31);
+  color: var(--second-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.current {
+  color: var(--accent-color);
 }
 .buy-btn {
   display: inline-block;
