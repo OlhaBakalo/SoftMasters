@@ -117,16 +117,6 @@
 }
 .hero__link-list {
   display: flex;
-  // position: relative;
-  // z-index: 3;
-  // @include tab {
-  //   z-index: 0;
-  //   padding-bottom: 19px;
-  // }
-  // @include desk {
-  //   margin-left: 38px;
-  //   padding-bottom: 56px;
-  // }
 }
 .hero__link-item:not(:last-child) {
   margin-right: 8px;
@@ -154,10 +144,18 @@
 .hero__link-left {
   background-color: var(--accent-color);
   color: var(--second-text-color);
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
 }
 .hero__link-right {
   background-color: var(--second-text-color);
   color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 .hero__left-content {
   display: none;
