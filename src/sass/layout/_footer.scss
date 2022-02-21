@@ -26,7 +26,6 @@
   font-family: 'Titan One', cursive;
   font-size: 18px;
   line-height: 1.16;
-  // text-align: center;
   text-transform: uppercase;
 
   @include tab {
@@ -51,7 +50,6 @@
   font-family: 'Titan One', cursive;
   font-size: 34px;
   line-height: 1.14;
-  // text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -101,7 +99,7 @@
 .footer-social__icon {
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: var(--second-text-color);
 }
 .footer-contact {
   margin-bottom: 43px;
