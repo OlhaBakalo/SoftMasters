@@ -20,7 +20,7 @@
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[ata-modal-open-burger]'),
+    openModalBtn: document.querySelector('[data-modal-open-burger]'),
     closeModalBtn: document.querySelector('[data-modal-close-content]'),
     modal: document.querySelector('[data-modal]'),
     body: document.querySelector('body'),
