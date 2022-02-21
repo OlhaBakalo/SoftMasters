@@ -18,6 +18,12 @@
   }
 }
 
+@mixin only_tel {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
 @mixin tab {
   @media screen and (min-width: 768px) {
     @content;
@@ -34,7 +40,8 @@
   padding-left: $p-l;
   padding-right: $p-r;
   height: 44px;
-  border-radius: 50%;
+  border-radius: 22px;
+  border: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +49,8 @@
   background-color: var(--button-bg-one);
   > svg {
     margin-left: $m-l;
+    stroke: var(--button-text-one);
+    fill: none;
   }
   &:hover,
   &:focus {
@@ -53,7 +62,8 @@
   padding-left: $p-l;
   padding-right: $p-r;
   height: 44px;
-  border-radius: 50%;
+  border-radius: 22px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,6 +71,8 @@
   background-color: var(--button-bg-two);
   > svg {
     margin-left: $m-l;
+    stroke: var(--button-text-two);
+    fill: none;
   }
   &:hover,
   &:focus {
