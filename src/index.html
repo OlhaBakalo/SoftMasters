@@ -17,6 +17,28 @@
     rel="stylesheet" />
 </head>
 
+    <!-- Подключаем файл скриптов для слайдера Slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.slider').slick({
+          arrows: false,
+          dots: true,
+          speed: 1000,
+          touchTreshold: 10,
+          fade: true,
+          cssEase: 'linear',
+        });
+      });
+    </script>
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./js/index.js"></script>
+  
 <body>
   <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
   <!-- <include src="./partials/example.html"></include> -->
