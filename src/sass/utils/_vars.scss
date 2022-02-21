@@ -18,7 +18,7 @@
   /* ----------------Stroke color-------------- */
   --border-color: #e1e1e1;
 
-  /* ----------------Animstion----------------- */
+  /* ----------------Animation----------------- */
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -29,4 +29,6 @@
   --button-text-two: #ffffff;
   --button-accent-bg-one: #ecebeb;
   --button-accent-bg-two: #c7133e;
+  --button-hover-color-dark: #d41342;
+  --button-hover-color-light: #ecebeb;
 }
