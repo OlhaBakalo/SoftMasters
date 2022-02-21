@@ -21,7 +21,7 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open-burger]'),
-    closeModalBtn: document.querySelector('[data-modal-close-content]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
     body: document.querySelector('body'),
   };
@@ -37,6 +37,3 @@
     refs.body.style.overflow = value;
   }
 })();
-
-
-
