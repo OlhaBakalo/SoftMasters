@@ -190,4 +190,9 @@
   min-height: 50px;
   border: 1px solid #d41443;
   border-radius: 22px;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-bg-one);
+  }
 }

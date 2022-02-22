@@ -1,7 +1,10 @@
+// Styles for close-button and send button comes from
+// modal.scss
+
 .modal-about {
-  z-index: 99;
+  z-index: 999999;
   width: 90vw;
-  min-height: 581px;
+  //   min-height: 581px;
   background-color: var(--basic-bg-color);
   border-radius: 10px;
   box-shadow: 4px 4px 3px 6px rgb(0 0 0 / 25%);
@@ -12,24 +15,101 @@
   transition: transform var(--transition-duration) var(--transition-timing-function),
     opacity var(--transition-duration) var(--transition-timing-function);
   padding: 40px;
+  overflow-y: scroll;
+  @include tel {
+    max-width: calc(480px * 0.9);
+  }
   @include tab {
-    width: 450px;
-    min-height: 609px;
+    max-width: calc(768px * 0.9);
   }
   @include desk {
-    width: 528px;
-    min-height: 581px;
-    @media screen and (max-height: 980px) {
-      top: 0;
-      transform: translate(-50%);
+    max-width: calc(1280px * 0.9);
+  }
+  //   @include tab {
+  //     width: 450px;
+  //     min-height: 609px;
+  //   }
+  @include desk {
+    // width: 528px;
+    // min-height: 581px;
+    // @media screen and (max-height: 980px) {
+    //   top: 0;
+    //   transform: translate(-50%);
+    // }
+  }
+}
+
+.modal-about__title {
+  font-family: 'Titan One', cursive;
+  @include font(400, 34px, 1.15, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 26px;
+  @include tab {
+    margin-bottom: 50px;
+    @include font(400, 48px, 1.15, null);
+  }
+  @include desk {
+    margin-bottom: 55px;
+    @include font(400, 58px, 1.14, 0.06em);
+  }
+}
+
+.modal-about-description__main-text {
+  @include font(null, 12px, 1.62, null);
+  color: var(--title-text-color);
+  margin-bottom: 28px;
+  @include tab {
+    @include font(null, 14px, 1.76, null);
+  }
+  @include desk {
+    margin-bottom: 30px;
+    @include font(null, 16px, 1.76, 0.04em);
+  }
+}
+.modal-about-description__details-text {
+  @include font(null, 12px, 1.62, 0.04em);
+  &:last-of-type {
+    margin-bottom: 21px;
+  }
+  & + & {
+    margin-top: 10px;
+  }
+  @include tab {
+    @include font(null, 14px, 1.76, 0.04em);
+    &:last-of-type {
+      margin-bottom: 57px;
+    }
+  }
+  @include desk {
+    line-height: 1.94;
+    & + & {
+      margin-top: 37px;
+    }
+    &:last-of-type {
+      margin-bottom: 38px;
     }
   }
 }
-.modal__btn-close__icon {
-  fill: var(--accent-color);
-  transition: fill var(--transition-duration) var(--transition-timing-function);
-  .modal__btn-close:hover &,
-  .modal__btn-close:focus & {
-    fill: var(--second-bg-color);
+
+.questions-text {
+  display: block;
+  @include font(700, 16px, 1.15, null);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  text-align: center;
+  @include tab {
+    font-size: 18px;
   }
+  @include desk {
+    font-size: 20px;
+  }
+}
+
+.form__btn-send--about {
+  display: block;
+  margin: 0 auto;
 }
