@@ -1,0 +1,80 @@
+<!-- HEADER SECTION -->
+<header class="header">
+    <div class="container header-container ">
+        <div class="header-logo-container"> <a class="header-logo" href=""><img
+                    class="header-logo-img" src="./images/header/logo.png"
+                    alt="logo"></a>
+        </div>
+        <nav class="header-navigation">
+            <ul class="list header-list list">
+                <li class="header-list__item"> <a href="./index.html" class="link header-list__link
+                        current">Home</a>
+                </li>
+                <li class="header-list__item"> <a href="#slider" class="link header-list__link
+                        ">About us</a>
+                </li>
+                <li class="header-list__item"> <a href="#about" class="link header-list__link
+                        ">How
+                        it's made?</a></li>
+                <li class="header-list__item"> <a class="link header-list__link
+                        " href="#products">Our products</a></li>
+                <li class="header-list__item"> <a href="#contacts" class="link header-list__link
+                        ">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button"
+            class="menu-toggle menu-toggle_open header__menu-toggle js-open-menu"
+            aria-expanded="false" aria-controls="mobile-menu"
+            aria-label="Открытие мобильного меню">
+            <svg class="menu-toggle__icon" width="20" height="12">
+                <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+        </button>
+        <button class="buy-btn buy-btn_header" type="button" data-modal-open>Buy
+            now
+            <svg class="buy-btn__icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-bracket-right">
+                </use>
+            </svg>
+        </button>
+        <div class="mobile-menu menu-conteiner container js-menu-container"
+            id="mobile-menu">
+            <button type="button"
+                class="menu-toggle menu-toggle_close mobile-menu__menu-toggle js-close-menu"
+                aria-label="Закрытие мобильного меню">
+                <svg class="menu-toggle__icon menu-toggle__icon_close"
+                    width="14" height="14">
+                    <use href="./images/icons.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+            <button class="buy-btn buy-btn_mobile-menu" type="button"
+                data-modal-open-burger>Buy
+                now<svg class="buy-btn__icon" width="10" height="10">
+                    <use href="./images/icons.svg#icon-bracket-right">
+                    </use>
+                </svg>
+            </button>
+            <ul class="list mob-list mobile-menu__mob-list list">
+                <li class="mob-list__item">
+                    <a href="./index.html" class="mob-list__link link">Home</a>
+                </li>
+                <li class="mob-list__item">
+                    <a href="#slider" class="mob-list__link link">About us</a>
+                </li>
+                <li class="mob-list__item">
+                    <a href="#about" class="mob-list__link link">How it's
+                        made?</a>
+                </li>
+                <li class="mob-list__item">
+                    <a href="#products" class="mob-list__link link">Our
+                        products</a>
+                </li>
+                <li class="mob-list__item">
+                    <a href="#contacts" class="mob-list__link link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

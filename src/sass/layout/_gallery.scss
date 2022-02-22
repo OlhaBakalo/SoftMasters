@@ -1,3 +1,18 @@
-.section-gallery {
-  background-image: linear-gradient(180deg, #fff5f6 0, #fff5f6 40%, #fff 0, #fff);
+.gallery {
+  background-image: linear-gradient(180deg, #fff5f6 0, #fff5f6 40%, #ffffff 0, #ffffff);
+  @include tab {
+    background-image: linear-gradient(180deg, #fff5f6 0, #fff5f6 36%, #ffffff 0, #ffffff);
+  }
+  @include desk {
+    background-image: linear-gradient(180deg, #fff5f6 0, #fff5f6 33%, #ffffff 0, #ffffff);
+  }
+}
+.gallery-img {
+  min-height: 122px;
+  @media screen and (min-width: 768px) {
+    min-height: 264px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-height: 430px;
+  }
 }
