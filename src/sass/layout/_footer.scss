@@ -119,14 +119,16 @@
   }
 }
 .footer-contact__text {
-  @include font(700, 12px, 1.86, null);
+  @include font(700, 12px, 1.83, null);
   text-align: right;
   color: var(--title-text-color);
   @include tab {
     font-size: 14px;
+    line-height: 1.85;
   }
   @include desk {
     font-size: 16px;
+    line-height: 1.875;
   }
 }
 .footer-contact__tel {
@@ -141,7 +143,6 @@
   padding-bottom: 25px;
   @include tab {
     letter-spacing: 0.02em;
-
     padding-top: 29px;
     padding-bottom: 18px;
   }
@@ -153,10 +154,11 @@
 .footer-copyright__text {
   width: 150px;
   margin: 0 auto;
-  @include font(700, 14px, 1.52, null);
+  @include font(700, 14px, 1.5);
   text-align: center;
   color: var(--primary-text-colo);
   @include tab {
+    line-height: 1.85;
     width: 276px;
     letter-spacing: 0.02em;
   }
