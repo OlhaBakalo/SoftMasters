@@ -17,10 +17,10 @@
   @media screen and (max-width: 767px) {
     max-width: 230px;
   }
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
     max-width: 180px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 330px;
   }
 }
@@ -33,10 +33,10 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 38px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 60px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-right: 30px;
   }
 }
@@ -47,9 +47,11 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+
   line-height: 1.14;
   @media screen and (max-width: 767px) {
     font-size: 36px;
+
 
     margin-bottom: 13px;
   }
@@ -72,11 +74,12 @@
   background-repeat: no-repeat;
   width: 33px;
   height: 50px;
+
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 40px;
   }
   background-image: url(../images/advantages/icon1-1x.png);
@@ -88,6 +91,7 @@
     .advantages-icon1::before {
       background-image: url(../images/advantages/icon1-2x.png);
     }
+
   }
 }
 
@@ -98,11 +102,13 @@
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
+
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
+
     margin-bottom: 40px;
   }
   background-image: url(../images/advantages/icon2-1x.png);
@@ -124,11 +130,13 @@
   background-repeat: no-repeat;
   width: 44px;
   height: 50px;
+
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
+
     margin-bottom: 40px;
   }
   background-image: url(../images/advantages/icon3-1x.png);
@@ -154,7 +162,7 @@
     font-size: 14px;
     line-height: 1.74;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.76;
     letter-spacing: 0.02em;

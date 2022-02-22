@@ -19,9 +19,12 @@
   --accent-text-color: #ffa5ba;
   /* ----------------Stroke color-------------- */
   --border-color: #e1e1e1;
+
   /* ----------------Animation----------------- */
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+ /* -------------------Button----------------- */
   --button-bg-one: #ffffff;
   --button-text-one: #d41443;
   --button-bg-two: #d41443;
@@ -2142,6 +2145,7 @@ li {
 
 @media screen and (min-width: 768px) {
   .footer-top {
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
