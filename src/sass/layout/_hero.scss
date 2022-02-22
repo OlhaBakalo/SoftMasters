@@ -80,7 +80,7 @@
   }
 }
 .hero__main-title {
-  font-family: 'Titan One', sans-serif;
+  font-family: 'Titan One', cursive;
   @include font(400, 26px, 1.15);
   text-transform: uppercase;
   color: var(--second-bg-color);
@@ -269,7 +269,7 @@
   position: absolute;
   top: 2px;
   left: 0;
-  font-family: 'Titan One', sans-serif;
+  font-family: 'Titan One', cursive;
   @include font(400, 28px, 1.14);
   text-transform: uppercase;
   color: var(--accent-color);
@@ -306,7 +306,7 @@
   position: absolute;
   top: 2px;
   left: 6px;
-  font-family: 'Titan One', sans-serif;
+  font-family: 'Titan One', cursive;
   @include font(400, 28px, 1.14);
   text-transform: uppercase;
   color: var(--accent-color);

@@ -1,0 +1,42 @@
+.scrolling-up {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--hero-bg-color);
+  color: var(--accent-color);
+  opacity: 0;
+  z-index: 1001;
+  transition: opacity var(--transition-duration) var(--transition-timing-function);
+  @include tab {
+    bottom: 35px;
+    right: 35px;
+    width: 50px;
+    height: 50px;
+  }
+  @include desk {
+    width: 70px;
+    height: 70px;
+  }
+  opacity: 0.3;
+  &:hover {
+    opacity: 1;
+  }
+  &.show {
+    display: none;
+  }
+  &__icon {
+    fill: currentColor;
+    @include tab {
+      transform: scale(1.5);
+    }
+    @include desk {
+      transform: scale(2);
+    }
+  }
+}
