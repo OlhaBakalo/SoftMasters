@@ -1,6 +1,14 @@
 .footer-container {
   background-color: var(--basic-bg-color);
+  padding-top: 113px;
+  @include tab {
+    padding-top: 158px;
+  }
+  @include desk {
+    padding-top: 165px;
+  }
 }
+
 .footer-top {
   @include tab {
     display: flex;
@@ -26,7 +34,6 @@
   font-family: 'Titan One', cursive;
   font-size: 18px;
   line-height: 1.16;
-  // text-align: center;
   text-transform: uppercase;
 
   @include tab {
@@ -51,7 +58,6 @@
   font-family: 'Titan One', cursive;
   font-size: 34px;
   line-height: 1.14;
-  // text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -93,15 +99,17 @@
   height: 100%;
   border-radius: 50%;
   background-color: var(--accent-text-color);
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
   &:hover,
   &:focus {
     background-color: var(--accent-color);
   }
 }
 .footer-social__icon {
+  fill: var(--second-bg-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
   width: 20px;
   height: 20px;
-  fill: currentColor;
 }
 .footer-contact {
   margin-bottom: 43px;

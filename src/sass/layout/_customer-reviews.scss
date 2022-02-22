@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 .customer-reviews__container {
   display: flex;
   justify-content: center;
@@ -69,7 +67,6 @@
   justify-content: center;
 }
 
->>>>>>> Stashed changes
 .slider__img {
   display: flex;
   margin: 0 auto;
@@ -86,18 +83,10 @@
     margin-bottom: 15px;
   }
 }
-.slider__text {
+
+.slidet__tumb--bg {
   background-color: #fafafa;
-
   margin-bottom: 72px;
-<<<<<<< Updated upstream
-
-  text-align: center;
-  @include font(500, 12px, 2.56, null);
-  color: var(--title-text-color);
-  width: 180px;
-  min-height: 245px;
-=======
   text-align: center;
   padding: 43px 50px 20px;
   @include tab {
@@ -114,8 +103,6 @@
   padding-right: 16px;
   padding-bottom: 6px;
   padding-left: 7px;
-
->>>>>>> Stashed changes
   background-image: repeating-linear-gradient(
     to bottom,
     transparent,
@@ -128,14 +115,11 @@
     padding-left: 20px;
   }
   @include desk {
-    // padding: 15px 35px 7px 28px;
     padding-right: 35px;
     padding-left: 37px;
   }
 }
 
-<<<<<<< Updated upstream
-=======
 .slider__text {
   position: relative;
   z-index: 1;
@@ -149,7 +133,6 @@
   }
 }
 
->>>>>>> Stashed changes
 .slider__title {
   position: relative;
   margin-bottom: 30px;
@@ -175,29 +158,6 @@
     background-color: #c7133e;
     box-shadow: -14px 0 0 #c7133e, 14px 0 0 #c7133e;
   }
-}
-
-.customer-reviews__container {
-  padding-top: 80px;
-  padding-bottom: 170px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-/* Ограничивающая оболочка */
-.slick-list {
-  overflow: hidden;
-}
-/* Лента слайдов */
-.slick-track {
-  display: flex;
-}
-
-.slider {
-  min-width: 0;
-  margin: 0 auto;
 }
 
 .slider .slick-dots {
