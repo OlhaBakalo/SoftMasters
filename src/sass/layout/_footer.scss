@@ -151,3 +151,32 @@
     letter-spacing: 0.02em;
   }
 }
+.scrollup-arrow {
+  position: relative;
+}
+.scrollup {
+  text-align: center;
+  padding: 7px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  background-color: var(--accent-text-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+  &-show {
+    display: block;
+  }
+}
+
+.scrollup__icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--second-text-color);
+}
