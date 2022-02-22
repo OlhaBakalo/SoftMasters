@@ -249,7 +249,7 @@
 .contacts__button-item:not(:last-child) {
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
-    margin-bottom: unset;
+    margin-bottom: 0;
     &:not(:last-child) {
       margin-right: 15px;
     }
@@ -261,6 +261,7 @@
 }
 
 .contacts__button {
+  display: inline-block;
   height: 44px;
   border-style: none;
   min-width: 161px;
