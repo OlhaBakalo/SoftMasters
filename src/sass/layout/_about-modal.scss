@@ -2,7 +2,7 @@
 // modal.scss
 
 .modal-about {
-  z-index: 999999;
+  // z-index: 1000;
   width: 90vw;
   //   min-height: 581px;
   background-color: var(--basic-bg-color);
@@ -15,7 +15,7 @@
   transition: transform var(--transition-duration) var(--transition-timing-function),
     opacity var(--transition-duration) var(--transition-timing-function);
   padding: 40px;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   @include tel {
     max-width: calc(480px * 0.9);
   }
