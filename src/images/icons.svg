@@ -1,8 +1,5 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <symbol id="icon-vector-btn" viewBox="0 0 19 32">
-            <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
-        </symbol>
         <symbol id="icon-burger" viewBox="0 0 46 32">
             <path d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"/>
         </symbol>
@@ -24,6 +21,9 @@
         <symbol id="icon-facebook" viewBox="0 0 16 32">
             <path d="M14.266 15.97H10.09v15.39H3.763V15.97H.754v-5.409h3.009v-3.5c0-2.503 1.182-6.422 6.384-6.422l4.687.02v5.25h-3.401c-.558 0-1.342.28-1.342 1.474v3.183h4.729l-.553 5.403z" />
         </symbol>
+        <symbol id="icon-bracket-right" viewBox="0 0 32 32">
+            <path d="M24.889 14.751l-14.24-14.24c-0.329-0.33-0.769-0.511-1.238-0.511s-0.908 0.182-1.238 0.511l-1.049 1.048c-0.682 0.683-0.682 1.794 0 2.476l11.958 11.958-11.971 11.971c-0.329 0.33-0.511 0.769-0.511 1.238s0.182 0.908 0.511 1.238l1.049 1.048c0.33 0.33 0.769 0.511 1.238 0.511s0.908-0.182 1.238-0.511l14.254-14.253c0.33-0.331 0.511-0.772 0.51-1.242 0.001-0.471-0.18-0.912-0.51-1.243z"></path>
+        </symbol>
         <!-- Іконки для модального вікна -->
         <symbol id="icon-modal-close" viewBox="0 0 32 32">
             <path d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
@@ -39,6 +39,10 @@
         </symbol>
         <symbol id="icon-icon-send-1" viewBox="0 0 32 32">
             <path d="M32 0l-32 18 10.227 3.787 15.773-14.787-11.997 16.187 0.009 0.003-0.012-0.003v8.813l5.735-6.691 7.267 2.691 4.999-28z"></path>
+        </symbol>
+        <!-- Іконка для Scroll -->
+        <symbol id="icon-arrow_upward_black_24dp-1" viewBox="0 0 32 32">
+            <path d="M5.333 16l1.88 1.88 7.453-7.44v16.227h2.667v-16.227l7.44 7.453 1.893-1.893-10.667-10.667-10.667 10.667z"></path>
         </symbol>
     </defs>
 </svg>

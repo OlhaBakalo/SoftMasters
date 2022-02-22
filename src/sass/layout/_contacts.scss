@@ -4,15 +4,15 @@
   max-height: 1444px;
   background-color: var(--basic-bg-color);
   @media screen and (max-width: 767px) {
-    padding-bottom: 56px;
-    min-height: 1444px;
+    padding-bottom: 0px;
+    // min-height: 1444px;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-bottom: 79px;
-    min-height: 687px;
+    padding-bottom: 0px;
+    // min-height: 687px;
   }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 85px;
+    padding-bottom: 0px;
     background-image: url('../images/contacts/contacts-bg.png');
 
     background-repeat: no-repeat;
@@ -32,13 +32,13 @@
 
 .contacts .container {
   @media screen and (max-width: 767px) {
-    min-height: 1404px;
+    min-height: 1377px;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    min-height: 603px;
+    min-height: 592px;
   }
   @media screen and (min-width: 1280px) {
-    min-height: 607px;
+    min-height: 603px;
   }
 }
 
