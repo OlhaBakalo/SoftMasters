@@ -1,20 +1,121 @@
+<<<<<<< Updated upstream
+=======
+.customer-reviews__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  text-align: center;
+
+  padding-top: 80px;
+  padding-bottom: 170px;
+  @include tab {
+    padding-top: 121px;
+    padding-bottom: 119px;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+  @include desk {
+    padding-top: 123px;
+    padding-bottom: 132px;
+    padding-left: 178px;
+    padding-right: 176px;
+  }
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.slider {
+  position: relative;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+.slider__item {
+  position: relative;
+  text-align: center;
+  &::before {
+    content: '';
+    background-image: url('../images/customer-reviews/quotes.png');
+    position: absolute;
+    width: 54px;
+    height: 40px;
+    top: 186px;
+    left: 60px;
+    @include tab {
+      top: 134px;
+      left: 40px;
+    }
+    @include desk {
+      top: 132px;
+      left: 50px;
+    }
+  }
+}
+
+.slider__item.slick-center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+>>>>>>> Stashed changes
 .slider__img {
   display: flex;
   margin: 0 auto;
   margin-bottom: 72px;
   width: 85px;
   height: 85px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+
+  @include tab {
+    margin-bottom: 19px;
+  }
+  @include desk {
+    margin-bottom: 15px;
+  }
 }
 .slider__text {
   background-color: #fafafa;
 
   margin-bottom: 72px;
+<<<<<<< Updated upstream
 
   text-align: center;
   @include font(500, 12px, 2.56, null);
   color: var(--title-text-color);
   width: 180px;
   min-height: 245px;
+=======
+  text-align: center;
+  padding: 43px 50px 20px;
+  @include tab {
+    margin-bottom: 42px;
+    padding: 47px 36px 34px 60px;
+  }
+  @include desk {
+    margin-bottom: 34px;
+    padding: 47px 54px 39px 50px;
+  }
+}
+
+.slider__tumb--gradient {
+  padding-right: 16px;
+  padding-bottom: 6px;
+  padding-left: 7px;
+
+>>>>>>> Stashed changes
   background-image: repeating-linear-gradient(
     to bottom,
     transparent,
@@ -22,14 +123,58 @@
     #e1e1e1 29px,
     #e1e1e1 30px
   );
+  @include tab {
+    padding-right: 44px;
+    padding-left: 20px;
+  }
+  @include desk {
+    // padding: 15px 35px 7px 28px;
+    padding-right: 35px;
+    padding-left: 37px;
+  }
 }
 
+<<<<<<< Updated upstream
+=======
+.slider__text {
+  position: relative;
+  z-index: 1;
+  @include font(500, 12px, 2.56, null);
+  color: var(--title-text-color);
+  @include tab {
+    @include font(null, 14px, 2.16, 0.04em);
+  }
+  @include desk {
+    @include font(null, 16px, 1.86, null);
+  }
+}
+
+>>>>>>> Stashed changes
 .slider__title {
+  position: relative;
   margin-bottom: 30px;
 
   text-align: center;
   @include font(500, 14px, 1.86, null);
   color: var(--title-text-color);
+  @include tab {
+    margin-bottom: 35px;
+    @include font(null, 16px, null, null);
+  }
+  @include desk {
+    @include font(null, 20px, null, null);
+  }
+  &::before {
+    content: '';
+    margin: 0 auto;
+    margin-bottom: 18px;
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #c7133e;
+    box-shadow: -14px 0 0 #c7133e, 14px 0 0 #c7133e;
+  }
 }
 
 .customer-reviews__container {
@@ -63,7 +208,7 @@
 
 .slider .slick-dots li {
   list-style: none;
-  margin: 0px 10px;
+  margin: 0px 18px;
 }
 
 .slider .slick-dots button {
