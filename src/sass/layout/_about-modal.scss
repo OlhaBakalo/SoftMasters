@@ -16,6 +16,13 @@
     opacity var(--transition-duration) var(--transition-timing-function);
   padding: 40px;
   // overflow-y: scroll;
+  @media screen and (min-width: 320px) {
+    max-width: calc(320px * 0.9);
+    @media screen and (max-height: 816px) {
+      top: 0;
+      transform: translate(-50%);
+    }
+  }
   @include tel {
     max-width: calc(480px * 0.9);
     @media screen and (max-height: 604px) {
