@@ -10,7 +10,6 @@
   border-radius: 50%;
   background-color: var(--hero-bg-color);
   color: var(--accent-color);
-  opacity: 0;
   z-index: 1001;
   transition: opacity var(--transition-duration) var(--transition-timing-function);
   @include tab {
