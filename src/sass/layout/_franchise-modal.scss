@@ -13,6 +13,7 @@
   transition: transform var(--transition-duration) var(--transition-timing-function),
     opacity var(--transition-duration) var(--transition-timing-function);
   padding: 40px;
+  z-index: 1099;
   @include tel {
     max-width: calc(480px * 0.9);
   }

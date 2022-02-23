@@ -6,11 +6,11 @@
   background-color: rgba(240, 193, 165, 0.35);
   opacity: 1;
   transition: opacity var(--transition-duration) var(--transition-timing-function);
-  z-index: 99;
+  z-index: 1099;
   overflow-y: scroll;
 }
 .modal {
-  z-index: 99;
+  z-index: 1100;
   width: 90vw;
   min-height: 581px;
   background-color: var(--basic-bg-color);
@@ -146,6 +146,7 @@
     border: 2px solid var(--accent-color);
     border-radius: 2px;
     margin-right: 7px;
+    cursor: pointer;
   }
   @include tab {
     align-items: center;
@@ -193,7 +194,7 @@
   transition: background-color var(--transition-duration) var(--transition-timing-function);
   &:hover,
   &:focus {
-//     background-color: var(--button-accent-bg-one);
+    //     background-color: var(--button-accent-bg-one);
     background-color: var(--hero-bg-color);
   }
 }
