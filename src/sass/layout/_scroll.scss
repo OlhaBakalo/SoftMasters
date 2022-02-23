@@ -12,6 +12,7 @@
   color: var(--accent-color);
   z-index: 1001;
   transition: opacity var(--transition-duration) var(--transition-timing-function);
+  opacity: 0.3;
   @include tab {
     bottom: 35px;
     right: 35px;
@@ -22,7 +23,6 @@
     width: 70px;
     height: 70px;
   }
-  opacity: 0.3;
   &:hover {
     opacity: 1;
   }
