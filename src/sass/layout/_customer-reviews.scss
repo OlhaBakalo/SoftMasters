@@ -9,13 +9,13 @@
   padding-bottom: 170px;
   @include tab {
     padding-top: 121px;
-    padding-bottom: 119px;
+    padding-bottom: 197px;
     padding-left: 74px;
     padding-right: 74px;
   }
   @include desk {
     padding-top: 123px;
-    padding-bottom: 132px;
+    padding-bottom: 234px;
     padding-left: 178px;
     padding-right: 176px;
   }
@@ -34,6 +34,7 @@
 }
 
 .slider {
+  z-index: 98;
   position: relative;
   min-width: 0;
   margin: 0 auto;
