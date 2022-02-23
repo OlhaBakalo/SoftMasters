@@ -18,25 +18,36 @@
   // overflow-y: scroll;
   @include tel {
     max-width: calc(480px * 0.9);
+    @media screen and (max-height: 604px) {
+      top: 0;
+      transform: translate(-50%);
+    }
   }
   @include tab {
     max-width: calc(768px * 0.9);
+    @media screen and (max-height: 543px) {
+      top: 0;
+      transform: translate(-50%);
+    }
   }
   @include desk {
     max-width: calc(1280px * 0.9);
+    @media screen and (max-height: 511px) {
+      top: 0;
+      transform: translate(-50%);
+    }
   }
   //   @include tab {
   //     width: 450px;
   //     min-height: 609px;
   //   }
-  @include desk {
-    // width: 528px;
-    // min-height: 581px;
-    // @media screen and (max-height: 980px) {
-    //   top: 0;
-    //   transform: translate(-50%);
-    // }
-  }
+
+  // width: 528px;
+  // min-height: 581px;
+  // @media screen and (max-height: 980px) {
+  //   top: 0;
+  //   transform: translate(-50%);
+  // }
 }
 
 .modal-about__title {
@@ -45,13 +56,13 @@
   text-align: center;
   text-transform: uppercase;
   color: #d41443;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
   @include tab {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     @include font(400, 48px, 1.15, null);
   }
   @include desk {
-    margin-bottom: 55px;
+    margin-bottom: 22px;
     @include font(400, 58px, 1.14, 0.06em);
   }
 }
@@ -59,36 +70,36 @@
 .modal-about-description__main-text {
   @include font(null, 12px, 1.62, null);
   color: var(--title-text-color);
-  margin-bottom: 28px;
+  margin-bottom: 14px;
   @include tab {
     @include font(null, 14px, 1.76, null);
   }
   @include desk {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     @include font(null, 16px, 1.76, 0.04em);
   }
 }
 .modal-about-description__details-text {
   @include font(null, 12px, 1.62, 0.04em);
   &:last-of-type {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
   & + & {
-    margin-top: 10px;
+    margin-top: 15px;
   }
   @include tab {
     @include font(null, 14px, 1.76, 0.04em);
     &:last-of-type {
-      margin-bottom: 57px;
+      margin-bottom: 22px;
     }
   }
   @include desk {
     line-height: 1.94;
     & + & {
-      margin-top: 37px;
+      margin-top: 17px;
     }
     &:last-of-type {
-      margin-bottom: 38px;
+      margin-bottom: 22px;
     }
   }
 }
@@ -100,7 +111,6 @@
   text-transform: uppercase;
   color: var(--accent-color);
   margin-bottom: 15px;
-  text-align: center;
   @include tab {
     font-size: 18px;
   }
@@ -109,7 +119,67 @@
   }
 }
 
+.modal-about__form-wrap {
+  @include tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.form__field--about {
+  @include tab {
+    width: 40%;
+  }
+}
+
 .form__btn-send--about {
   display: block;
   margin: 0 auto;
+  @include tab {
+    margin: 0 0 0 45px;
+  }
 }
+
+// Styles for inputs comes from modal.scss
+
+// .form__field {
+//   display: flex;
+//   flex-direction: column;
+// }
+// .form__field:not(:last-child) {
+//   margin-bottom: 10px;
+// }
+// .input__text {
+//   display: block;
+//   @include font(400, 12px, 1.16);
+//   color: var(--primary-text-color);
+//   margin-bottom: 4px;
+// }
+// .input__wrap {
+//   position: relative;
+// }
+// .form__input {
+//   width: 100%;
+//   height: 40px;
+//   border: 1px solid rgba(247, 12, 24, 0.281);
+//   box-sizing: border-box;
+//   border-radius: 4px;
+//   padding-left: 42px;
+//   cursor: pointer;
+//   outline: none;
+//   transition: border-color var(--transition-duration) var(--transition-timing-function);
+//   &:focus {
+//     border-color: var(--accent-color);
+//     & + .input__icon {
+//       fill: var(--accent-color);
+//     }
+//   }
+// }
+// .input__icon {
+//   position: absolute;
+//   left: 12px;
+//   top: 11px;
+//   bottom: 11px;
+//   transition: fill var(--transition-duration) var(--transition-timing-function);
+// }
